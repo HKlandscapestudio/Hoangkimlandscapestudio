@@ -1,5 +1,10 @@
 const green365 = [
   {
+  day: 3,
+  title: "Xây dựng nền tảng hồ sơ năng lực",
+  image: "assets/day-003.png"
+},
+  {
     day: 1,
     title: "Bắt đầu hành trình Green365",
     image: "assets/day-001.png"
