@@ -7,7 +7,7 @@ const green365 = [
 
   {
     day: 2,
-    title: "Khai sinh thương hiệu "Hoàng Kim Landscape Studio",
+    title: "Thành quả Green365 Ngày 2",
     image: "assets/day-002.png"
   }
 ];
@@ -15,8 +15,6 @@ const green365 = [
 const gallery = document.getElementById("green365-gallery");
 
 if (gallery) {
-  gallery.innerHTML = "";
-
   const sortedDays = [...green365].sort((a, b) => b.day - a.day);
 
   sortedDays.forEach((item) => {
@@ -31,7 +29,10 @@ if (gallery) {
       >
 
       <div class="green365-card-content">
-        <span>Ngày ${String(item.day).padStart(3, "0")} / 365</span>
+        <span>
+          Ngày ${String(item.day).padStart(3, "0")} / 365
+        </span>
+
         <h3>${item.title}</h3>
       </div>
     `;
