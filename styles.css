@@ -88,3 +88,72 @@ footer{background:#082f20;color:rgba(255,255,255,.72);padding:26px 0}.footer-wra
     grid-template-columns: 1fr;
   }
 }
+.green365-page {
+  padding-top: 140px;
+  min-height: 100vh;
+}
+
+.green365-page .section-head {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.green365-page h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(36px, 6vw, 64px);
+}
+
+.green365-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.green365-card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.green365-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.green365-card-content {
+  padding: 18px;
+}
+
+.green365-card-content span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8c6a16;
+  text-transform: uppercase;
+}
+
+.green365-card-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .green365-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .green365-page {
+    padding-top: 110px;
+  }
+
+  .green365-gallery {
+    grid-template-columns: 1fr;
+  }
+}
