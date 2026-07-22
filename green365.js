@@ -3,6 +3,12 @@ const green365 = [
     day: 1,
     title: "Bắt đầu hành trình Green365",
     image: "assets/day-001.png"
+  },
+
+  {
+    day: 2,
+    title: "Tiêu đề của Ngày 2",
+    image: "assets/day-002.png"
   }
 ];
 
