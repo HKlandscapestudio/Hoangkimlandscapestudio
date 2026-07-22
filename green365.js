@@ -15,29 +15,27 @@ const green365 = [
 const gallery = document.getElementById("green365-gallery");
 
 if (gallery) {
-
   gallery.innerHTML = "";
 
-  green365.forEach((item) => {
+  const sortedDays = [...green365].sort((a, b) => b.day - a.day);
 
+  sortedDays.forEach((item) => {
     const card = document.createElement("article");
-
     card.className = "green365-card";
 
     card.innerHTML = `
-      <img src="${item.image}" alt="Green365 Ngày ${item.day}">
+      <img
+        src="${item.image}"
+        alt="Green365 Ngày ${item.day}"
+        loading="lazy"
+      >
 
       <div class="green365-card-content">
-
-        <span>Ngày ${String(item.day).padStart(3,"0")} / 365</span>
-
+        <span>Ngày ${String(item.day).padStart(3, "0")} / 365</span>
         <h3>${item.title}</h3>
-
       </div>
     `;
 
     gallery.appendChild(card);
-
   });
-
 }
