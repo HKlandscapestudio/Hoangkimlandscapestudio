@@ -1,1 +1,188 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Portfolio Hoàng Kim Landscape Studio – Thiết kế, thi công và bảo dưỡng cảnh quan."
+  >
+
+  <title>Portfolio | Hoàng Kim Landscape Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+
+    <a class="brand" href="index.html">
+      <img
+        src="assets/logo.jpg"
+        alt="Logo Hoàng Kim Landscape Studio"
+      >
+
+      <span>HKlandscapestudio</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      aria-label="Mở menu"
+      onclick="document.body.classList.toggle('menu-open')"
+    >
+      ☰
+    </button>
+
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="index.html#services">Dịch vụ</a>
+      <a href="index.html#projects">Dự án</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="green365.html">Green365</a>
+      <a href="index.html#contact" class="btn small">Liên hệ</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="portfolio-page">
+
+    <div class="container">
+
+      <div class="portfolio-heading">
+        <div class="eyebrow dark">HỒ SƠ NĂNG LỰC</div>
+
+        <h1>Portfolio</h1>
+
+        <p>
+          Khám phá năng lực, kinh nghiệm thực tế và định hướng dịch vụ
+          của Hoàng Kim Landscape Studio.
+        </p>
+      </div>
+
+      <div class="portfolio-viewer">
+
+        <button
+          id="previous-page"
+          class="portfolio-arrow"
+          type="button"
+          aria-label="Trang trước"
+        >
+          ‹
+        </button>
+
+        <div class="portfolio-book">
+
+          <img
+            id="portfolio-page-image"
+            src="assets/portfolio/page-01.jpg"
+            alt="Portfolio Hoàng Kim Landscape Studio – Trang 1"
+          >
+
+          <div
+            id="portfolio-loading"
+            class="portfolio-loading"
+          >
+            Đang tải trang...
+          </div>
+
+        </div>
+
+        <button
+          id="next-page"
+          class="portfolio-arrow"
+          type="button"
+          aria-label="Trang tiếp theo"
+        >
+          ›
+        </button>
+
+      </div>
+
+      <div class="portfolio-controls">
+
+        <button
+          id="previous-page-bottom"
+          class="portfolio-control-btn"
+          type="button"
+        >
+          ← Trang trước
+        </button>
+
+        <span id="portfolio-page-counter">
+          Trang 1 / 10
+        </span>
+
+        <button
+          id="next-page-bottom"
+          class="portfolio-control-btn"
+          type="button"
+        >
+          Trang tiếp →
+        </button>
+
+      </div>
+
+      <p class="portfolio-tip">
+        Sử dụng nút điều hướng hoặc phím mũi tên trái – phải để xem Portfolio.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="container footer-wrap">
+
+    <div class="footer-brand">
+
+      <img
+        src="assets/logo.jpg"
+        alt="Logo Hoàng Kim Landscape Studio"
+      >
+
+      <div>
+        <strong>Hoàng Kim Landscape Studio</strong>
+        <p>Thiết kế để thi công được.</p>
+      </div>
+
+    </div>
+
+    <p>
+      © 2026 Hoàng Kim Landscape Studio.
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="portfolio.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
