@@ -614,3 +614,217 @@ footer{background:#082f20;color:rgba(255,255,255,.72);padding:26px 0}.footer-wra
   object-fit: cover;
   object-position: center;
 }
+/* =========================================
+   ABOUT HERO — TEXT OVER BACKGROUND IMAGE
+========================================= */
+
+.about-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 720px;
+  overflow: hidden;
+
+  background-image:
+    url("assets/about-bg.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Lớp phủ sáng bên trái, trong dần sang phải */
+.about-hero-overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250, 247, 239, 0.96) 0%,
+      rgba(250, 247, 239, 0.88) 30%,
+      rgba(250, 247, 239, 0.62) 48%,
+      rgba(250, 247, 239, 0.18) 68%,
+      rgba(250, 247, 239, 0.03) 100%
+    );
+}
+
+/* Khối chữ */
+.about-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+/* Nhãn nhỏ */
+.about-label {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #c79117;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* Toàn bộ tiêu đề */
+.about-title {
+  max-width: 690px;
+  margin: 0;
+}
+
+/* Phần chữ lớn */
+.about-title-main {
+  display: block;
+  color: #073f28;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(52px, 6vw, 82px);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+/* Dòng chữ viết tay màu vàng */
+.about-title-accent {
+  display: block;
+  margin-top: 10px;
+  color: #c89218;
+  font-family: "Allura", cursive;
+  font-size: clamp(44px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+/* Đường kẻ nhỏ */
+.about-divider {
+  width: 54px;
+  height: 2px;
+  margin: 30px 0 25px;
+  background: #c89218;
+}
+
+/* Nội dung giới thiệu */
+.about-description {
+  max-width: 585px;
+  margin: 0 0 16px;
+  color: #33483d;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Nút */
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 15px 24px;
+  border-radius: 999px;
+
+  background: #073f28;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 12px 28px rgba(7, 63, 40, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-button:hover {
+  background: #c89218;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 34px rgba(7, 63, 40, 0.28);
+}
+
+.about-button span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .about-hero {
+    min-height: 680px;
+    background-position: 62% center;
+  }
+
+  .about-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(250, 247, 239, 0.96) 0%,
+        rgba(250, 247, 239, 0.88) 48%,
+        rgba(250, 247, 239, 0.35) 78%,
+        rgba(250, 247, 239, 0.15) 100%
+      );
+  }
+
+  .about-content {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .about-description {
+    max-width: 520px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .about-hero {
+    min-height: auto;
+    background-position: 68% center;
+  }
+
+  .about-hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(250, 247, 239, 0.96) 0%,
+        rgba(250, 247, 239, 0.91) 58%,
+        rgba(250, 247, 239, 0.70) 100%
+      );
+  }
+
+  .about-content {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .about-label {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+
+  .about-title-main {
+    font-size: 46px;
+    line-height: 1.06;
+  }
+
+  .about-title-accent {
+    margin-top: 6px;
+    font-size: 44px;
+    line-height: 0.98;
+  }
+
+  .about-description {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-button {
+    padding: 13px 20px;
+    font-size: 14px;
+  }
+}
