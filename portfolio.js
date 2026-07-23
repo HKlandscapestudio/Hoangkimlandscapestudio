@@ -1,14 +1,14 @@
 const portfolioPages = [
-  "assets/portfolio/page-01.png",
-  "assets/portfolio/page-02.png",
-  "assets/portfolio/page-03.png",
-  "assets/portfolio/page-04.png",
-  "assets/portfolio/page-05.png",
-  "assets/portfolio/page-06.png",
-  "assets/portfolio/page-07.png",
-  "assets/portfolio/page-08.png",
-  "assets/portfolio/page-09.png",
-  "assets/portfolio/page-10.png"
+  "assets/page-01.png",
+  "assets/page-02.png",
+  "assets/page-03.png",
+  "assets/page-04.png",
+  "assets/page-05.png",
+  "assets/page-06.png",
+  "assets/page-07.png",
+  "assets/page-08.png",
+  "assets/page-09.png",
+  "assets/page-10.png"
 ];
 
 let currentPage = 0;
