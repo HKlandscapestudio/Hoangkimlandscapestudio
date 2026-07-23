@@ -1,14 +1,14 @@
 const portfolioPages = [
-  "assets/portfolio/page-01.jpg",
-  "assets/portfolio/page-02.jpg",
-  "assets/portfolio/page-03.jpg",
-  "assets/portfolio/page-04.jpg",
-  "assets/portfolio/page-05.jpg",
-  "assets/portfolio/page-06.jpg",
-  "assets/portfolio/page-07.jpg",
-  "assets/portfolio/page-08.jpg",
-  "assets/portfolio/page-09.jpg",
-  "assets/portfolio/page-10.jpg"
+  "assets/portfolio/page-01.png",
+  "assets/portfolio/page-02.png",
+  "assets/portfolio/page-03.png",
+  "assets/portfolio/page-04.png",
+  "assets/portfolio/page-05.png",
+  "assets/portfolio/page-06.png",
+  "assets/portfolio/page-07.png",
+  "assets/portfolio/page-08.png",
+  "assets/portfolio/page-09.png",
+  "assets/portfolio/page-10.png"
 ];
 
 let currentPage = 0;
@@ -39,6 +39,7 @@ function showPage(pageIndex) {
 
   if (loadingText) {
     loadingText.style.display = "block";
+    loadingText.textContent = "Đang tải trang...";
   }
 
   pageImage.classList.add("page-changing");
@@ -55,6 +56,7 @@ function showPage(pageIndex) {
     pageImage.classList.remove("page-changing");
 
     if (loadingText) {
+      loadingText.style.display = "block";
       loadingText.textContent =
         "Không tìm thấy ảnh. Hãy kiểm tra tên và vị trí file.";
     }
@@ -114,7 +116,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-/* Tải trước các trang để chuyển ảnh nhanh hơn */
 portfolioPages.forEach((pagePath) => {
   const image = new Image();
   image.src = pagePath;
